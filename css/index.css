@@ -79,14 +79,25 @@ body {
 
 /*tablet view */
 @media only screen and (max-width: 800px) {
-  body {
-    background-color: aqua;
+  .header-image {
+    display: none;
   }
 }
 
 /*mobile view */
 @media only screen and (max-width: 500px) {
-  body {
-    background-color: rgb(163, 131, 131);
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar a {
+    border-bottom: 1px solid black;
+  }
+  .top-content {
+    flex-direction: column;
+  }
+  .bottom-content {
+    flex-direction: column;
   }
 }
